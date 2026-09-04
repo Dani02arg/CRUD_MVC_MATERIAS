@@ -1,14 +1,28 @@
-# CRUD PHP - MVC
+# Sistema de Gestión de Materias (CRUD PHP MVC)
 
-Proyecto de clase para reorganizar un CRUD PHP + MySQL usando Model, View, Controller y un Router sencillo.
+Aplicación web desarrollada con arquitectura **MVC** para la gestión administrativa de materias académicas e integración con un portafolio web personal.
 
-## Estructura
-- config/database.php → conexión
-- models/materia.php → datos y SQL
-- controllers/MateriaController.php → coordinación
-- views/ → HTML/presentación
-- public/index.php → punto de entrada y Router
-- database.sql → base de datos
+## Tecnologías Utilizadas
+- **Frontend:** HTML5, CSS3, JavaScript (ES6)
+- **Backend:** PHP 8.x
+- **Base de Datos:** MySQL
+- **Patrón de Arquitectura:** MVC (Modelo-Vista-Controlador)
+
+## Funcionalidades Principales
+- **CRUD Completo:** Crear, consultar, editar y eliminar materias.
+- **Estados de Cursada:** Filtro visual para materias *Aprobadas*, *En curso* e *Inactivas/Pendientes*.
+- **Filtro Dinámico:** Búsqueda en tiempo real implementada en JavaScript.
+- **Portafolio Integrado:** Muestra el progreso académico actualizado en la vista pública.
+
+## 📁 Estructura del Proyecto
+CRUD_PHP_MVC/
+├── config/          # Conexión a la base de datos
+├── controllers/     # Controladores (MateriaController.php)
+├── models/          # Modelos (Materia.php)
+├── views/           # Vistas (materias/, layouts/)
+├── public/          # Punto de entrada (index.php), CSS y JS
+└── database.sql     # Script de creación de tablas
+
 
 ## Ejecutar
 1. Ejecutar `database.sql` en MySQL/phpMyAdmin.
