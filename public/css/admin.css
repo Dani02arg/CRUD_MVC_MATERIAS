@@ -1,0 +1,247 @@
+/* ==========================================
+   ESTILOS GENERALES Y BASE DEL PANEL
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a24;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+/* Encabezados y títulos */
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #a0aec0;
+}
+
+/* Layout y Contenedor Principal */
+.admin-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   BARRA DE NAVEGACIÓN SUPERIOR
+   ========================================== */
+
+.admin-nav {
+    background-color: #14141e;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00eeff;
+}
+
+.admin-title {
+    font-weight: bold;
+    color: #00eeff;
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.admin-nav .menu-links a {
+    color: #cbd5e0;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.admin-nav .menu-links a:hover {
+    color: #00eeff;
+}
+
+/* ==========================================
+   BOTONES Y ACCIONES
+   ========================================== */
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: #00eeff;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #00c4d4;
+}
+
+.btn-secondary {
+    background-color: #4a5568;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #718096;
+}
+
+.btn-danger {
+    background-color: #e53e3e;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #c53030;
+}
+
+.btn-sitio {
+    background-color: transparent;
+    color: #00eeff;
+    border: 1px solid #00eeff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-sitio:hover {
+    background-color: #00eeff;
+    color: #000;
+}
+
+/* Encabezado de la vista con botón */
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   TABLA DE MATERIAS
+   ========================================== */
+
+.tabla-container {
+    overflow-x: auto;
+    background-color: #242538;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+}
+
+.tabla-admin {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabla-admin th {
+    background-color: #14141e;
+    color: #00eeff;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tabla-admin td {
+    padding: 14px 16px;
+    border-top: 1px solid #2d3748;
+}
+
+.tabla-admin tbody tr:hover {
+    background-color: #2d2e45;
+}
+
+.acciones-cell {
+    display: flex;
+    gap: 8px;
+}
+
+/* Badges de Estado */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badge-aprobada {
+    background-color: rgba(72, 187, 120, 0.2);
+    color: #68d391;
+    border: 1px solid #48bb78;
+}
+
+.badge-encurso {
+    background-color: rgba(236, 201, 75, 0.2);
+    color: #faf089;
+    border: 1px solid #ecc94b;
+}
+
+.badge-pendiente {
+    background-color: rgba(160, 174, 192, 0.2);
+    color: #cbd5e0;
+    border: 1px solid #a0aec0;
+}
+
+/* ==========================================
+   FORMULARIO (Crear y Editar)
+   ========================================== */
+
+.card-form {
+    background-color: #242538;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #cbd5e0;
+    font-weight: 500;
+}
+
+.form-control {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #4a5568;
+    background-color: #14141e;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #00eeff;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}

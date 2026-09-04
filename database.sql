@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS cruddb; USE cruddb;
+CREATE TABLE IF NOT EXISTS users(user_id INT AUTO_INCREMENT PRIMARY KEY,firstname VARCHAR(100) NOT NULL,lastname VARCHAR(100) NOT NULL,address VARCHAR(255),contact VARCHAR(100));
+INSERT INTO users(firstname,lastname,address,contact) VALUES ('Juan','Pérez','Av. Ejemplo 123','387 555-1111'),('María','Gómez','Calle Principal 456','387 555-2222'),('Pedro','López','Barrio Centro','387 555-3333');
