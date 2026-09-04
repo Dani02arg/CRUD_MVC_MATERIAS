@@ -24,8 +24,9 @@ CRUD_PHP_MVC/
 ├── public/          # Punto de entrada (index.php), CSS y JS
 └── database.sql     # Script de creación de tablas
 
-
+```
 ## Ejecutar
+
 1. Ejecutar `database.sql` en MySQL/phpMyAdmin.
 2. Revisar `config/database.php` si las credenciales son diferentes.
 3. Desde `CRUD_PHP_MVC` ejecutar:
