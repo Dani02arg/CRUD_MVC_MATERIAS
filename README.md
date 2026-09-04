@@ -15,6 +15,7 @@ Aplicación web desarrollada con arquitectura **MVC** para la gestión administr
 - **Portafolio Integrado:** Muestra el progreso académico actualizado en la vista pública.
 
 ## 📁 Estructura del Proyecto
+```text
 CRUD_PHP_MVC/
 ├── config/          # Conexión a la base de datos
 ├── controllers/     # Controladores (MateriaController.php)
